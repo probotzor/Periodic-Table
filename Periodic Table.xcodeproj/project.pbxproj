@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3956D5871F92605D00C097FB /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3956D5861F92605D00C097FB /* csv.swift */; };
+		3956D5891F9260A100C097FB /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3956D5881F9260A100C097FB /* Element.swift */; };
+		3956D58B1F927ACE00C097FB /* ElementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3956D58A1F927ACE00C097FB /* ElementCell.swift */; };
+		3956D58D1F928FFC00C097FB /* ElementDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3956D58C1F928FFC00C097FB /* ElementDetailVC.swift */; };
+		39B363B01F925ECC00A30ECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B363AF1F925ECC00A30ECF /* AppDelegate.swift */; };
+		39B363B21F925ECC00A30ECF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B363B11F925ECC00A30ECF /* ViewController.swift */; };
+		39B363B51F925ECC00A30ECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B363B31F925ECC00A30ECF /* Main.storyboard */; };
+		39B363B81F925ECC00A30ECF /* Periodic_Table.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39B363B61F925ECC00A30ECF /* Periodic_Table.xcdatamodeld */; };
+		39B363BA1F925ECC00A30ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39B363B91F925ECC00A30ECF /* Assets.xcassets */; };
+		39B363BD1F925ECC00A30ECF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B363BB1F925ECC00A30ECF /* LaunchScreen.storyboard */; };
+		39B363C81F925ECC00A30ECF /* Periodic_TableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B363C71F925ECC00A30ECF /* Periodic_TableTests.swift */; };
+		39B363D31F925ECC00A30ECF /* Periodic_TableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B363D21F925ECC00A30ECF /* Periodic_TableUITests.swift */; };
+		39C66FDC1F929A9500F7E440 /* data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 39C66FDB1F929A0800F7E440 /* data.csv */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39B363C41F925ECC00A30ECF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39B363A41F925ECC00A30ECF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39B363AB1F925ECC00A30ECF;
+			remoteInfo = "Periodic Table";
+		};
+		39B363CF1F925ECC00A30ECF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39B363A41F925ECC00A30ECF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39B363AB1F925ECC00A30ECF;
+			remoteInfo = "Periodic Table";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3956D5861F92605D00C097FB /* csv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		3956D5881F9260A100C097FB /* Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		3956D58A1F927ACE00C097FB /* ElementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementCell.swift; sourceTree = "<group>"; };
+		3956D58C1F928FFC00C097FB /* ElementDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementDetailVC.swift; sourceTree = "<group>"; };
+		39B363AC1F925ECC00A30ECF /* Periodic Table.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Periodic Table.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39B363AF1F925ECC00A30ECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39B363B11F925ECC00A30ECF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		39B363B41F925ECC00A30ECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39B363B71F925ECC00A30ECF /* Periodic_Table.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Periodic_Table.xcdatamodel; sourceTree = "<group>"; };
+		39B363B91F925ECC00A30ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39B363BC1F925ECC00A30ECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39B363BE1F925ECC00A30ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39B363C31F925ECC00A30ECF /* Periodic TableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Periodic TableTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39B363C71F925ECC00A30ECF /* Periodic_TableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Periodic_TableTests.swift; sourceTree = "<group>"; };
+		39B363C91F925ECC00A30ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39B363CE1F925ECC00A30ECF /* Periodic TableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Periodic TableUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39B363D21F925ECC00A30ECF /* Periodic_TableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Periodic_TableUITests.swift; sourceTree = "<group>"; };
+		39B363D41F925ECC00A30ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39C66FDB1F929A0800F7E440 /* data.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.csv; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39B363A91F925ECC00A30ECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39B363C01F925ECC00A30ECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39B363CB1F925ECC00A30ECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39B363A31F925ECC00A30ECF = {
+			isa = PBXGroup;
+			children = (
+				39B363AE1F925ECC00A30ECF /* Periodic Table */,
+				39B363C61F925ECC00A30ECF /* Periodic TableTests */,
+				39B363D11F925ECC00A30ECF /* Periodic TableUITests */,
+				39B363AD1F925ECC00A30ECF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39B363AD1F925ECC00A30ECF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39B363AC1F925ECC00A30ECF /* Periodic Table.app */,
+				39B363C31F925ECC00A30ECF /* Periodic TableTests.xctest */,
+				39B363CE1F925ECC00A30ECF /* Periodic TableUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39B363AE1F925ECC00A30ECF /* Periodic Table */ = {
+			isa = PBXGroup;
+			children = (
+				39B363E21F925F3D00A30ECF /* Model */,
+				39B363E31F925F5500A30ECF /* View */,
+				39B363E41F925F5B00A30ECF /* Controller */,
+				39B363E51F925F6B00A30ECF /* Util */,
+				39B363E61F925F7300A30ECF /* Resources */,
+				39B363AF1F925ECC00A30ECF /* AppDelegate.swift */,
+				39B363B31F925ECC00A30ECF /* Main.storyboard */,
+				39B363B91F925ECC00A30ECF /* Assets.xcassets */,
+				39B363BB1F925ECC00A30ECF /* LaunchScreen.storyboard */,
+				39B363BE1F925ECC00A30ECF /* Info.plist */,
+				39B363B61F925ECC00A30ECF /* Periodic_Table.xcdatamodeld */,
+			);
+			path = "Periodic Table";
+			sourceTree = "<group>";
+		};
+		39B363C61F925ECC00A30ECF /* Periodic TableTests */ = {
+			isa = PBXGroup;
+			children = (
+				39B363C71F925ECC00A30ECF /* Periodic_TableTests.swift */,
+				39B363C91F925ECC00A30ECF /* Info.plist */,
+			);
+			path = "Periodic TableTests";
+			sourceTree = "<group>";
+		};
+		39B363D11F925ECC00A30ECF /* Periodic TableUITests */ = {
+			isa = PBXGroup;
+			children = (
+				39B363D21F925ECC00A30ECF /* Periodic_TableUITests.swift */,
+				39B363D41F925ECC00A30ECF /* Info.plist */,
+			);
+			path = "Periodic TableUITests";
+			sourceTree = "<group>";
+		};
+		39B363E21F925F3D00A30ECF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3956D5881F9260A100C097FB /* Element.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39B363E31F925F5500A30ECF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3956D58A1F927ACE00C097FB /* ElementCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39B363E41F925F5B00A30ECF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				39B363B11F925ECC00A30ECF /* ViewController.swift */,
+				3956D58C1F928FFC00C097FB /* ElementDetailVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		39B363E51F925F6B00A30ECF /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3956D5861F92605D00C097FB /* csv.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		39B363E61F925F7300A30ECF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				39C66FDB1F929A0800F7E440 /* data.csv */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39B363AB1F925ECC00A30ECF /* Periodic Table */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39B363D71F925ECC00A30ECF /* Build configuration list for PBXNativeTarget "Periodic Table" */;
+			buildPhases = (
+				39B363A81F925ECC00A30ECF /* Sources */,
+				39B363A91F925ECC00A30ECF /* Frameworks */,
+				39B363AA1F925ECC00A30ECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Periodic Table";
+			productName = "Periodic Table";
+			productReference = 39B363AC1F925ECC00A30ECF /* Periodic Table.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39B363C21F925ECC00A30ECF /* Periodic TableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39B363DA1F925ECC00A30ECF /* Build configuration list for PBXNativeTarget "Periodic TableTests" */;
+			buildPhases = (
+				39B363BF1F925ECC00A30ECF /* Sources */,
+				39B363C01F925ECC00A30ECF /* Frameworks */,
+				39B363C11F925ECC00A30ECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39B363C51F925ECC00A30ECF /* PBXTargetDependency */,
+			);
+			name = "Periodic TableTests";
+			productName = "Periodic TableTests";
+			productReference = 39B363C31F925ECC00A30ECF /* Periodic TableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		39B363CD1F925ECC00A30ECF /* Periodic TableUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39B363DD1F925ECC00A30ECF /* Build configuration list for PBXNativeTarget "Periodic TableUITests" */;
+			buildPhases = (
+				39B363CA1F925ECC00A30ECF /* Sources */,
+				39B363CB1F925ECC00A30ECF /* Frameworks */,
+				39B363CC1F925ECC00A30ECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39B363D01F925ECC00A30ECF /* PBXTargetDependency */,
+			);
+			name = "Periodic TableUITests";
+			productName = "Periodic TableUITests";
+			productReference = 39B363CE1F925ECC00A30ECF /* Periodic TableUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39B363A41F925ECC00A30ECF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Milos Jakovljevic";
+				TargetAttributes = {
+					39B363AB1F925ECC00A30ECF = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					39B363C21F925ECC00A30ECF = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 39B363AB1F925ECC00A30ECF;
+					};
+					39B363CD1F925ECC00A30ECF = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 39B363AB1F925ECC00A30ECF;
+					};
+				};
+			};
+			buildConfigurationList = 39B363A71F925ECC00A30ECF /* Build configuration list for PBXProject "Periodic Table" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39B363A31F925ECC00A30ECF;
+			productRefGroup = 39B363AD1F925ECC00A30ECF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39B363AB1F925ECC00A30ECF /* Periodic Table */,
+				39B363C21F925ECC00A30ECF /* Periodic TableTests */,
+				39B363CD1F925ECC00A30ECF /* Periodic TableUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39B363AA1F925ECC00A30ECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C66FDC1F929A9500F7E440 /* data.csv in Resources */,
+				39B363BD1F925ECC00A30ECF /* LaunchScreen.storyboard in Resources */,
+				39B363BA1F925ECC00A30ECF /* Assets.xcassets in Resources */,
+				39B363B51F925ECC00A30ECF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39B363C11F925ECC00A30ECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39B363CC1F925ECC00A30ECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39B363A81F925ECC00A30ECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3956D58B1F927ACE00C097FB /* ElementCell.swift in Sources */,
+				3956D5871F92605D00C097FB /* csv.swift in Sources */,
+				39B363B21F925ECC00A30ECF /* ViewController.swift in Sources */,
+				39B363B01F925ECC00A30ECF /* AppDelegate.swift in Sources */,
+				39B363B81F925ECC00A30ECF /* Periodic_Table.xcdatamodeld in Sources */,
+				3956D5891F9260A100C097FB /* Element.swift in Sources */,
+				3956D58D1F928FFC00C097FB /* ElementDetailVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39B363BF1F925ECC00A30ECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B363C81F925ECC00A30ECF /* Periodic_TableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39B363CA1F925ECC00A30ECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B363D31F925ECC00A30ECF /* Periodic_TableUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39B363C51F925ECC00A30ECF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39B363AB1F925ECC00A30ECF /* Periodic Table */;
+			targetProxy = 39B363C41F925ECC00A30ECF /* PBXContainerItemProxy */;
+		};
+		39B363D01F925ECC00A30ECF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39B363AB1F925ECC00A30ECF /* Periodic Table */;
+			targetProxy = 39B363CF1F925ECC00A30ECF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		39B363B31F925ECC00A30ECF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39B363B41F925ECC00A30ECF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		39B363BB1F925ECC00A30ECF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39B363BC1F925ECC00A30ECF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39B363D51F925ECC00A30ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39B363D61F925ECC00A30ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39B363D81F925ECC00A30ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HHVFZBRB4;
+				INFOPLIST_FILE = "Periodic Table/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "probotzor.Periodic-Table";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39B363D91F925ECC00A30ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HHVFZBRB4;
+				INFOPLIST_FILE = "Periodic Table/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "probotzor.Periodic-Table";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		39B363DB1F925ECC00A30ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HHVFZBRB4;
+				INFOPLIST_FILE = "Periodic TableTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "probotzor.Periodic-TableTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Periodic Table.app/Periodic Table";
+			};
+			name = Debug;
+		};
+		39B363DC1F925ECC00A30ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HHVFZBRB4;
+				INFOPLIST_FILE = "Periodic TableTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "probotzor.Periodic-TableTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Periodic Table.app/Periodic Table";
+			};
+			name = Release;
+		};
+		39B363DE1F925ECC00A30ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HHVFZBRB4;
+				INFOPLIST_FILE = "Periodic TableUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "probotzor.Periodic-TableUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Periodic Table";
+			};
+			name = Debug;
+		};
+		39B363DF1F925ECC00A30ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HHVFZBRB4;
+				INFOPLIST_FILE = "Periodic TableUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "probotzor.Periodic-TableUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Periodic Table";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39B363A71F925ECC00A30ECF /* Build configuration list for PBXProject "Periodic Table" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39B363D51F925ECC00A30ECF /* Debug */,
+				39B363D61F925ECC00A30ECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39B363D71F925ECC00A30ECF /* Build configuration list for PBXNativeTarget "Periodic Table" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39B363D81F925ECC00A30ECF /* Debug */,
+				39B363D91F925ECC00A30ECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39B363DA1F925ECC00A30ECF /* Build configuration list for PBXNativeTarget "Periodic TableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39B363DB1F925ECC00A30ECF /* Debug */,
+				39B363DC1F925ECC00A30ECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39B363DD1F925ECC00A30ECF /* Build configuration list for PBXNativeTarget "Periodic TableUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39B363DE1F925ECC00A30ECF /* Debug */,
+				39B363DF1F925ECC00A30ECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		39B363B61F925ECC00A30ECF /* Periodic_Table.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				39B363B71F925ECC00A30ECF /* Periodic_Table.xcdatamodel */,
+			);
+			currentVersion = 39B363B71F925ECC00A30ECF /* Periodic_Table.xcdatamodel */;
+			path = Periodic_Table.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 39B363A41F925ECC00A30ECF /* Project object */;
+}
